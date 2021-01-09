@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#FFFFFF;
+	opacity: 0.87;
+    color: black;
+    text-align: center;
+	height: 50px;
+	padding-bottom: 10px;
+}
+.text {
+	position: relative;
+	top: 15px;
+}
+header {
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	background: #FFFFFF;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	height: 120px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	width: 100%;
+	align-content: center;
+	padding-right: 130px;
+	padding-left: 130px;
+}
+.logo {
+	color: #FF7700;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: 20px;
+	text-shadow: 3px 3px #C0C0C0;
+	letter-spacing: 15px;
+}
+nav {
+	float: right;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover {
+	background: #FF7700;
+	color: #fff;
+	transition: 0.4s;
+}
+.menu {
+	padding-top: 20px;
+}
+html {
+	background-color:#D9C3B1;
+}
+.slider {
+	width: 400px;
+	height: 500px;
+	background: url("Webp.net-resizeimage.jpg");
+	animation: slide 30s infinite;
+	border: 3px solid black;
+	border-radius: 15px;
+}
+@keyframes slide{
+	25%{
+		background: url("Webp.net-resizeimage (1).jpg");
+	}
+	50%{
+		background: url("Webp.net-resizeimage (2).jpg");
+	}
+	75%{
+		background: url("Webp.net-resizeimage (3).jpg");
+	}
+}
+.slider2 {
+	width: 400px;
+	height: 500px;
+	background: url("mountains-1412683.png");
+	border: 3px solid black;
+	border-radius: 15px;
+}
+
+.slider3 {
+	width: 400px;
+	height: 500px;
+	background: url("italy-1587287.jpg");
+	border: 3px solid black;
+	border-radius: 15px;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #FF7700;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #FF7700;
+    color: #000;
+}
+h3 {
+	text-decoration: line-through;
+	position: relative;
+	bottom: 55px;
+	left: 100px;
+	color: red;
+}
+.description li {
+	position: relative;
+	bottom: 30px;
+}
+.produit2 {
+	position: absolute;
+	margin-left: 460px;
+}
+.produit1 {
+	position: absolute;
+	margin-left: 920px;
+}
+	position: absolute;
+	margin-left: 500px;
+}

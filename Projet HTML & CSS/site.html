@@ -1,0 +1,2236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Title and description ================================================== -->
+    
+              <meta name="csrf-param" content="authenticity_token">
+              <meta name="csrf-token" content="9HJuwiU1RrAKQeJtui+j6QC9KqD7qja+GFufNI7V9E6wyDp3hVoCu7L/v68YD+LxI2CdvjakRrWtyYz+cJ+cKg==">
+            
+    <title>
+      
+        Tech Interview Pro
+      
+    </title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="description" content="Learn the secrets to getting a software engineering job at a big tech company. Using our years of industry experience, we have condensed our knowledge to the material that is most important for passing the coding interview and landing your dream tech job." />
+    
+
+    <!-- Helpers ================================================== -->
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.techseries.dev/interview">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:title" content="Tech Interview Pro">
+<meta name="twitter:title" content="Tech Interview Pro">
+
+
+<meta property="og:description" content="Learn the secrets to getting a software engineering job at a big tech company. Using our years of industry experience, we have condensed our knowledge to the material that is most important for passing the coding interview and landing your dream tech job.">
+<meta name="twitter:description" content="Learn the secrets to getting a software engineering job at a big tech company. Using our years of industry experience, we have condensed our knowledge to the material that is most important for passing the coding interview and landing your dream tech job.">
+
+
+<meta property="og:image" content="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/sites/59001/images/Wq4axgTbToWMKqvY687T_coursecover.jpg">
+<meta name="twitter:image" content="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/sites/59001/images/Wq4axgTbToWMKqvY687T_coursecover.jpg">
+
+
+    <link href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/sites/59001/images/QuFIBNIRSwmZ1ZXkLmSQ_favicon.png?v=2" rel="shortcut icon" />
+    <link rel="canonical" href="https://www.techseries.dev/interview" />
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" media="screen" href="https://ap-kajabi-storefronts-production.global.ssl.fastly.net/assets/core-36d711acd6b6b6ebec34a694a9eef8bf1660c6ae66a0df925956db2bc4a92888.css" />
+    <link rel="stylesheet" media="screen" href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/assets/styles.css?1571072521248925" />
+    <link rel="stylesheet" media="screen" href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/assets/overrides.css?1571072521248925" />
+
+    <!-- Container Width ================================================== -->
+    
+    
+
+    <!-- Optional Background Image ======================================== -->
+    
+
+    <!-- Header hook ====================================================== -->
+    <script style="text/javascript">
+  var Kajabi = Kajabi || {};
+</script>
+<script style="text/javascript">
+  Kajabi.currentSiteUser = {
+    "id" : "-1",
+    "type" : "Guest"
+  };
+</script>
+<script style="text/javascript">
+  Kajabi.theme = {
+    activeThemeName: "Premier",
+    previewThemeId: null,
+    editor: false
+  };
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)
+},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2031374-21', 'auto');
+ga('send', 'pageview');
+</script>
+<style type="text/css">
+  #editor-overlay {
+    display: none;
+    border-color: #2E91FC;
+    position: absolute;
+    background-color: rgba(46,145,252,0.05);
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 10000000000;
+  }
+  .editor-overlay-button {
+    color: white;
+    background: #2E91FC;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-left: -24px;
+    margin-top: -12px;
+    padding: 3px 10px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:1.5px;
+
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+</style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.agent='plkajabi';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                                                                      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '367324337466957');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=367324337466957&ev=PageView&noscript=1"
+/></noscript>
+<script style="text/javascript">
+  Kajabi.nextPipelineStepUrl = "https://www.techseries.dev/interview-episode1"
+</script>
+<script type="text/javascript">
+(function() {
+    window.sib = { equeue: [], client_key: "wri1p61wkenu5iwo5kal7" };
+    /* OPTIONAL: email for identify request*/
+    // window.sib.email_id = 'example@domain.com';
+    window.sendinblue = {}; for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) { (function(k) { window.sendinblue[k] = function() { var arg = Array.prototype.slice.call(arguments); (window.sib[k] || function() { var t = {}; t[k] = arg; window.sib.equeue.push(t);})(arg[0], arg[1], arg[2]);};})(j[i]);}var n = document.createElement("script"),i = document.getElementsByTagName("script")[0]; n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();
+})();
+</script>
+  </head>
+  <body>
+    <div class="container container--main container--full">
+      <div class="content-wrap">
+        <div class="section-wrap section-wrap--middle">
+          <div id="section-header" data-section-id="header"><!-- Header Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<style>
+  .header {
+    background: #000000;
+  }
+  
+  .header .logo--text, .header--left .header-menu a {
+    line-height: 32px;
+  }
+  .header .logo--image {
+    height: 32px;
+  }
+  .header .logo img {
+    max-height: 32px;
+  }
+  .announcement {
+      background: #2e91fc;
+      color: #fff;
+    }
+  /*============================================================================
+    #Header User Menu Styles
+  ==============================================================================*/
+  .header .user__dropdown {
+    background: #fff;
+    top: 63px;
+  }
+  .header--center .user__dropdown {
+    top: 50px;
+  }
+  
+  /*============================================================================
+    #Header Responsive Styles
+  ==============================================================================*/
+  @media (max-width: 767px) {
+    .header .logo--text {
+      line-height: 32px;
+    }
+    .header .logo--image {
+      max-height: 32px;
+    }
+    .header .logo img {
+      max-height: 32px;
+    }
+    .header .header-ham {
+      top: 16px;
+    }
+  }
+</style>
+
+
+
+  <!-- Announcement Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+<style>
+  .announcement {
+    background: #2e91fc;
+    color: #fff;
+  }
+  a.announcement:hover {
+    color: #fff;
+  }
+</style>
+
+
+
+  <div class="header header--dark header--left" kjb-settings-id="sections_header_settings_background_color">
+    <div class="container">
+      
+        <a href="/" class="logo logo--image">
+          <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/jt7lPFWS563vnJUMEBQD_logo.png" kjb-settings-id="sections_header_settings_logo"/>
+        </a>
+      
+        <div class="header-ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <div kjb-settings-id="sections_header_settings_menu" class="header-menu">
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+</div>
+          <div data-content-for-index><div id="section-1560053327239" data-section-id="1560053327239"><!-- Section Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+<style>
+  
+    .background-image--1560053327239 {
+      background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/zUHQldNGRzWHi38jYf2D_rr.jpg);
+    }
+  
+  .section--1560053327239 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+    .section--1560053327239, .section--1560053327239 h1, .section--1560053327239 h2, .section--1560053327239 h3, .section--1560053327239 h4, .section--1560053327239 h5 , .section--1560053327239 h6  {
+      /*============================================================================
+        #Text Color Override
+      ==============================================================================*/
+      color: #ffffff;
+    }
+  
+</style>
+
+
+
+  <div class="hero-background background-image background-image--1560053327239 ">
+
+  <div class="section section--hero section--middle section--dark section--small section--1560053327239 " kjb-settings-id="sections_1560053327239_settings_overlay">
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-md-8 btn__spacing btn__spacing--center">
+            <h1 kjb-settings-id="sections_1560053327239_settings_title"></h1>
+<div kjb-settings-id="sections_1560053327239_settings_text">
+  <h2>&nbsp;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Learn to pass the coding interview&nbsp;with the pros.</h2>
+<p>Ex-Google TechLead and Ex-Facebook Engineer collaboration</p>
+</div>
+
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div><div id="section-1560054055483" data-section-id="1560054055483"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560054055483 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #ffffff;
+  }
+  
+  .section--link_list.section--dark.section--1560054055483 a, .section--link_list.section--light.section--1560054055483 a, .section--blog_posts.section--dark.section--1560054055483 a, .section--blog_posts.section--light.section--1560054055483 a, .section--feature.section--dark.section--1560054055483 a, .section--feature.section--light.section--1560054055483 a {
+    
+  }
+</style>
+
+
+
+
+
+
+
+
+<div class="">
+  <div id="" class="section section--opt_in section--opt_in_bar section--middle section--small section--light section--1560054055483 " kjb-settings-id="sections_1560054055483_settings_background_color">
+    <div class="container">
+      <div class="row text-xs-center">
+        
+          
+          <div class="col-md-12 ">
+            <div kjb-settings-id="sections_1560054055483_settings_text" style="text-align: left">
+  <h3>Learn the secrets to passing the&nbsp;tech interview.</h3>
+<p>We'll send you the first episode by email.&nbsp; It's free.</p>
+</div>
+
+            
+              
+
+<form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.techseries.dev/forms/209211/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="UFvN1cQNQc7HCLI7SGmUOFARo2akyXvEpk0H7GGKL1gU4ZlgZGIFxX+27/nqSdUgc8wUeGnHC88T3xQmn8BHPA==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="6d33f9081736c7cf027530d1539321a5" /><input type="hidden" name="form_submission[landing_page_id]" value="599673" autofill="off" />
+  
+  
+  
+  
+  
+  
+
+  <style>
+    /*============================================================================
+      #Individual CTA Style
+    ==============================================================================*/
+    .btn--sections_1560054055483_settings_btn_text.btn--solid {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #fff;
+    }
+    .btn--sections_1560054055483_settings_btn_text.btn--outline {
+      border-color: #cc0000;
+      color: #cc0000;
+    }
+  </style>
+  <div class="section--top" kjb-settings-id="sections_1560054055483_settings_form" style="text-align: left">
+    <input type="hidden" name="thank_you_url" value="#next-pipeline-step">
+    
+      <div class="row optin optin--inline">
+        <div class="col-md-8">
+          <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" data-parsley-remote-message="false" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn--sections_1560054055483_settings_btn_text btn--block btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_1560054055483_settings_btn_text">Watch Now</button>
+        </div>
+      </div>
+    
+  </div>
+</form>
+
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560058698733" data-section-id="1560058698733"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560058698733 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1560058698733 a, .section--link_list.section--light.section--1560058698733 a, .section--blog_posts.section--dark.section--1560058698733 a, .section--blog_posts.section--light.section--1560058698733 a, .section--feature.section--dark.section--1560058698733 a, .section--feature.section--light.section--1560058698733 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<div class="">
+  <div id="" class="section section--text_img section--middle section--small section--dark section--1560058698733 " kjb-settings-id="sections_1560058698733_settings_background_color">
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-md-5">
+            <div class="btn__spacing btn__spacing--left" kjb-settings-id="sections_1560058698733_settings_text" style="text-align: left">
+  <h2>The best way to pass the coding interview. Period.</h2>
+<h3>TechLead x Joma</h3>
+<p>Tech Interview Pro is an online training program &amp; professional community mentored by industry&nbsp;veterans Patrick Shyu ("<strong>TechLead</strong>", ex-Google/ex-Facebook)&nbsp;and Jonathan Ma ("<strong>Joma</strong>", ex-Facebook).&nbsp; We coach you on how to pass the technical coding interview covering from the starting basics to advanced topics - coding, algorithms, systems design in-depth, behavioral questions, resume tips, preparation strategy, common mistakes, mock interviews, technical deep-dives, must-know tips, offer negotiation, and more.</p>
+<p>Fast-track your career.&nbsp; Save yourself the years of struggle.</p>
+<p><strong>This&nbsp;changes everything.</strong></p>
+  
+</div>
+
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/uKkT7FJXRsOynskmy9QN_pic-001-14.jpg" class="img-fluid" kjb-settings-id="sections_1560058698733_settings_image"/>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1561087619034" data-section-id="1561087619034"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1561087619034 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #2c3e50;
+  }
+  
+  .section--link_list.section--dark.section--1561087619034 a, .section--link_list.section--light.section--1561087619034 a, .section--blog_posts.section--dark.section--1561087619034 a, .section--blog_posts.section--light.section--1561087619034 a, .section--feature.section--dark.section--1561087619034 a, .section--feature.section--light.section--1561087619034 a {
+    
+  }
+</style>
+
+
+<!-- Countdown Variables -->
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+
+
+
+<div class="background-image background-image--1561087619034">
+  <div id="" class="section section--countdown section--top section--xs-small section--dark section--1561087619034" kjb-settings-id="sections_1561087619034_settings_background_color">
+    <div class="container">
+      <div class="countdown countdown-- countdown--sunset" id="countdown-timer" kjb-settings-id="sections_1561087619034_settings_countdown_end_time" data-end-time="2019-10-21 00:00" data-timezone="America/Los_Angeles">
+        
+  <div class="row heading">
+
+  <div class="col-md-8">
+    
+      <h2 class="heading__title" kjb-settings-id="sections_1561087619034_settings_heading">Enrollment is open</h2>
+    
+    
+      <p class="heading__subtitle" kjb-settings-id="sections_1561087619034_settings_subheading">Limited Time, RSVP to hold your spot.</p>
+    
+  </div>
+</div>
+
+        <div class="row">
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-xs-3 countdown__item">
+                <h2 id="days" class="countdown__amount days">00</h2>
+                <h6 class="countdown__title" kjb-settings-id="sections_1561087619034_settings_days_text">DAYS</h6>
+              </div>
+              <div class="col-xs-3 countdown__item">
+                <h2 id="hours" class="countdown__amount hours">00</h2>
+                <h6 class="countdown__title" kjb-settings-id="sections_1561087619034_settings_hours_text">HOURS</h6>
+              </div>
+              <div class="col-xs-3 countdown__item">
+                <h2 id="minutes" class="countdown__amount minutes">00</h2>
+                <h6 class="countdown__title" kjb-settings-id="sections_1561087619034_settings_minutes_text">MINS</h6>
+              </div>
+              <div class="col-xs-3 countdown__item">
+                <h2 id="seconds" class="countdown__amount seconds">00</h2>
+                <h6 class="countdown__title" kjb-settings-id="sections_1561087619034_settings_seconds_text">SECS</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560059146485" data-section-id="1560059146485"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560059146485 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #f9f9f9;
+  }
+  
+  .section--link_list.section--dark.section--1560059146485 a, .section--link_list.section--light.section--1560059146485 a, .section--blog_posts.section--dark.section--1560059146485 a, .section--blog_posts.section--light.section--1560059146485 a, .section--feature.section--dark.section--1560059146485 a, .section--feature.section--light.section--1560059146485 a {
+    
+  }
+</style>
+
+
+<div id="" class="section section--logo_list section--middle section--xs-small section--light section--1560059146485" kjb-settings-id="sections_1560059146485_settings_background_color">
+  <div class="container">
+    
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+    <div class="row">
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/SdpYCpbVSY67XQZEC0WM_msft.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1560059146485_0_settings_logo_list_img"/>
+
+
+        </div>
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/FI5itjXYSrW7DLxUyoQw_logo-facebook.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1560059146485_1_settings_logo_list_img"/>
+
+
+        </div>
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/GNDCZXyQQOaXWC04CJp3_logo-apple.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1560059146485_3_settings_logo_list_img"/>
+
+
+        </div>
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/hQvkoamRjizcDZfmOLgc_logo-amazon.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1560059146485_4_settings_logo_list_img"/>
+
+
+        </div>
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/p9RspPdDR6aPMZwjSODO_ig.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1570642424201_settings_logo_list_img"/>
+
+
+        </div>
+      
+        <div class="col-sm-2">
+          <!-- Block Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/xcTF7JnRyiNofaAgH3vg_spot.png" class="img-fluid" kjb-settings-id="sections_1560059146485_blocks_1570642623188_settings_logo_list_img"/>
+
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560145391532" data-section-id="1560145391532"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560145391532 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1560145391532 a, .section--link_list.section--light.section--1560145391532 a, .section--blog_posts.section--dark.section--1560145391532 a, .section--blog_posts.section--light.section--1560145391532 a, .section--feature.section--dark.section--1560145391532 a, .section--feature.section--light.section--1560145391532 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<!-- Conditional Styles For Accent Bar -->
+
+  <style>
+    .section--1560145391532 .section--heading__title {
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+    }
+    .section--1560145391532 .section--heading__title:after {
+      background: #cc0000;
+      height: 4px;
+    }
+  </style>
+
+
+<div id="" class="section section--heading section--top section--xs-small section--light section--1560145391532" kjb-settings-id="sections_1560145391532_settings_background_color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+          <h2 class="section--heading__title section--heading__title--sm" kjb-settings-id="sections_1560145391532_settings_heading">Program Features</h2>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560059496013" data-section-id="1560059496013"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560059496013 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1560059496013 a, .section--link_list.section--light.section--1560059496013 a, .section--blog_posts.section--dark.section--1560059496013 a, .section--blog_posts.section--light.section--1560059496013 a, .section--feature.section--dark.section--1560059496013 a, .section--feature.section--light.section--1560059496013 a {
+    
+  }
+</style>
+
+
+<div class="">
+  <div id="" class="section section--feature section--top section--xs-small section--light section--1560059496013 " kjb-settings-id="sections_1560059496013_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059496013_0 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059496013_0" kjb-settings-id="sections_1560059496013_blocks_1560059496013_0_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/ijC7SxqJRayuRsqKJ3n5_circle0.jpg" class="img-fluid" kjb-settings-id="sections_1560059496013_blocks_1560059496013_0_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059496013_blocks_1560059496013_0_settings_heading">Video course</h4>
+  
+  <div kjb-settings-id="sections_1560059496013_blocks_1560059496013_0_settings_text">
+    <p>A premium video-course (60+ episodes) teaching you how to pass the coding interview and <strong>exactly</strong> what you need to do.&nbsp; Learn in the comfort of your home.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059496013_1 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059496013_1" kjb-settings-id="sections_1560059496013_blocks_1560059496013_1_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/ROOlmTvoSiSXRioXV5Q8_circle2.jpg" class="img-fluid" kjb-settings-id="sections_1560059496013_blocks_1560059496013_1_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059496013_blocks_1560059496013_1_settings_heading">Live Q&A</h4>
+  
+  <div kjb-settings-id="sections_1560059496013_blocks_1560059496013_1_settings_text">
+    <p>Join us every 2 weeks for a live Q&amp;A where we will answer your personal questions. (Subject to availability)</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059496013_2 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059496013_2" kjb-settings-id="sections_1560059496013_blocks_1560059496013_2_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/PTY2LwzTtO8CjabIMUS1_circled.jpg" class="img-fluid" kjb-settings-id="sections_1560059496013_blocks_1560059496013_2_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059496013_blocks_1560059496013_2_settings_heading">Access to private Facebook Group</h4>
+  
+  <div kjb-settings-id="sections_1560059496013_blocks_1560059496013_2_settings_text">
+    <p>Led by TechLead and Joma, get&nbsp;lifetime access to our professional network on Facebook.&nbsp; Make new friends and gain access to bonus content.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560059541269" data-section-id="1560059541269"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560059541269 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1560059541269 a, .section--link_list.section--light.section--1560059541269 a, .section--blog_posts.section--dark.section--1560059541269 a, .section--blog_posts.section--light.section--1560059541269 a, .section--feature.section--dark.section--1560059541269 a, .section--feature.section--light.section--1560059541269 a {
+    
+  }
+</style>
+
+
+<div class="">
+  <div id="" class="section section--feature section--top section--xs-small section--light section--1560059541269 " kjb-settings-id="sections_1560059541269_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059541269_0 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059541269_0" kjb-settings-id="sections_1560059541269_blocks_1560059541269_0_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/1bJbeEG5SjCO2mSGPU11_circleb.jpg" class="img-fluid" kjb-settings-id="sections_1560059541269_blocks_1560059541269_0_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059541269_blocks_1560059541269_0_settings_heading">Coding Sessions</h4>
+  
+  <div kjb-settings-id="sections_1560059541269_blocks_1560059541269_0_settings_text">
+    <p>Join TechLead and Joma in 10+ video-coding sessions, where we deep-dive into data-structures and algorithms.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059541269_1 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059541269_1" kjb-settings-id="sections_1560059541269_blocks_1560059541269_1_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/xJad8LTbQ6K2NfYS185w_circlee.jpg" class="img-fluid" kjb-settings-id="sections_1560059541269_blocks_1560059541269_1_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059541269_blocks_1560059541269_1_settings_heading">Resume review</h4>
+  
+  <div kjb-settings-id="sections_1560059541269_blocks_1560059541269_1_settings_text">
+    <p>We help review your resume to ensure that you have the best chance of standing out.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1560059541269_2 img {
+      width: 200px;
+    }
+  </style>
+
+
+<div class="block--1560059541269_2" kjb-settings-id="sections_1560059541269_blocks_1560059541269_2_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/6fKy5bbRUKbywjA0Z8iD_circlef.jpg" class="img-fluid" kjb-settings-id="sections_1560059541269_blocks_1560059541269_2_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1560059541269_blocks_1560059541269_2_settings_heading">Additional content & lessons</h4>
+  
+  <div kjb-settings-id="sections_1560059541269_blocks_1560059541269_2_settings_text">
+    <p>This is a "living" course we are continuously improving by adding bonus content, tips &amp; tricks, and career mentorship.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560059057902" data-section-id="1560059057902"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560059057902 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1560059057902 a, .section--link_list.section--light.section--1560059057902 a, .section--blog_posts.section--dark.section--1560059057902 a, .section--blog_posts.section--light.section--1560059057902 a, .section--feature.section--dark.section--1560059057902 a, .section--feature.section--light.section--1560059057902 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<!-- Conditional Styles For Accent Bar -->
+
+
+<div id="" class="section section--heading section--top section--xs-small section--dark section--1560059057902" kjb-settings-id="sections_1560059057902_settings_background_color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+          <h2 class="section--heading__title section--heading__title--sm" kjb-settings-id="sections_1560059057902_settings_heading">Meet your instructors</h2>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560055161926" data-section-id="1560055161926"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560055161926 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1560055161926 a, .section--link_list.section--light.section--1560055161926 a, .section--blog_posts.section--dark.section--1560055161926 a, .section--blog_posts.section--light.section--1560055161926 a, .section--feature.section--dark.section--1560055161926 a, .section--feature.section--light.section--1560055161926 a {
+    
+  }
+</style>
+
+
+<div id="" class="section section--gallery section--top section-- section--light section--1560055161926">
+  <div class="row">
+    
+      
+        <div class="col-md-6">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1560055161926_0 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1560055161926_0 .gallery-image__text-container, .gallery-image--1560055161926_0 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1560055161926_0">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/kxQYN9LBTaixAXqC3eVF_pic-001-6.jpg" class="img-fluid" kjb-settings-id="sections_1560055161926_blocks_1560055161926_0_settings_image" />
+  
+    <div class="gallery-image__overlay gallery-image__overlay--bg"></div>
+    <div class="gallery-image__overlay gallery-image__text-container" kjb-settings-id="sections_1560055161926_blocks_1560055161926_0_settings_text_overlay_background_color">
+      <div class="gallery-image__table">
+        <div class="gallery-image__table-cell">
+          
+            <h3 class="gallery-image__title" kjb-settings-id="sections_1560055161926_blocks_1560055161926_0_settings_text_overlay_title">
+              TechLead
+            </h3>
+          
+          
+            <p class="gallery-image__subtitle" kjb-settings-id="sections_1560055161926_blocks_1560055161926_0_settings_text_overlay_subtitle">
+              "TechLead" is Patrick Shyu - ex-Google tech lead, ex-Facebook Staff Software Engineer, multi-millionaire app entrepreneur, digital nomad, Silicon Valley native, and software engineer. He has conducted over 100 interviews at Google.
+            </p>
+          
+        </div>
+      </div>
+    </div>
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+      
+        <div class="col-md-6">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1560055161926_1 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1560055161926_1 .gallery-image__text-container, .gallery-image--1560055161926_1 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1560055161926_1">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/Q2LFOVIEQZvL1LHmvn4B_pic-001-5.jpg" class="img-fluid" kjb-settings-id="sections_1560055161926_blocks_1560055161926_1_settings_image" />
+  
+    <div class="gallery-image__overlay gallery-image__overlay--bg"></div>
+    <div class="gallery-image__overlay gallery-image__text-container" kjb-settings-id="sections_1560055161926_blocks_1560055161926_1_settings_text_overlay_background_color">
+      <div class="gallery-image__table">
+        <div class="gallery-image__table-cell">
+          
+            <h3 class="gallery-image__title" kjb-settings-id="sections_1560055161926_blocks_1560055161926_1_settings_text_overlay_title">
+              Joma
+            </h3>
+          
+          
+            <p class="gallery-image__subtitle" kjb-settings-id="sections_1560055161926_blocks_1560055161926_1_settings_text_overlay_subtitle">
+              "Joma" is Jonathan Ma - he has done internships and full-time at Citadel, Linkedin, Facebook and Microsoft. He has worked as a data scientist, software engineer and product manager. He is currently working as a software engineer at a FANG company.
+            </p>
+          
+        </div>
+      </div>
+    </div>
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+  </div>
+</div>
+
+</div><div id="section-1560057552443" data-section-id="1560057552443"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+    .background-image--1560057552443 {
+      background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/UxyEI59aTsGInKsoweWQ_file.jpg);
+    }
+  
+  .section--1560057552443 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.6);
+  }
+  
+  .section--link_list.section--dark.section--1560057552443 a, .section--link_list.section--light.section--1560057552443 a, .section--blog_posts.section--dark.section--1560057552443 a, .section--blog_posts.section--light.section--1560057552443 a, .section--feature.section--dark.section--1560057552443 a, .section--feature.section--light.section--1560057552443 a {
+    
+  }
+</style>
+
+
+
+<div class="background-image background-image--1560057552443 ">
+  <div id="" class="section section--opt_in section--middle section--small section--dark section--1560057552443 " kjb-settings-id="sections_1560057552443_settings_background_color">
+    <div class="container">
+      <div class="row text-xs-center">
+        
+          
+            <div class="col-md-7">
+              <div kjb-settings-id="sections_1560057552443_settings_text" style="text-align: center">
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+            </div>
+            <div class="col-md-7">
+              
+  
+
+<form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.techseries.dev/forms/209211/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="g0H/cRyDf8DKIyrXAQh1ZfX7iBBFOt57Sc6RMTuBatfH+6vEvOw7y3KddxWjKDR91iY/Dog0rnD8XIL7xcsCsw==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="99176e993740f8d9d8f31459fd3b9952" /><input type="hidden" name="form_submission[landing_page_id]" value="599673" autofill="off" />
+  
+  
+  
+  
+  
+  
+
+  <style>
+    /*============================================================================
+      #Individual CTA Style
+    ==============================================================================*/
+    .btn--sections_1560057552443_settings_btn_text.btn--solid {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #fff;
+    }
+    .btn--sections_1560057552443_settings_btn_text.btn--outline {
+      border-color: #cc0000;
+      color: #cc0000;
+    }
+  </style>
+  
+  
+  
+  
+    
+    <style>
+      .section--1560057552443 .optin__panel {
+        padding: 40px;
+        background: #ffffff;
+        margin: 1rem 0;
+      }
+      .section--1560057552443 .optin__panel .optin--stacked {
+        margin: 0 -15px;
+      }
+    </style>
+  
+  
+    <style>
+      .section--1560057552443 .optin__heading, .section--1560057552443 .optin__subheading {
+        color: #373F46;
+      }
+      .section--1560057552443 label {
+        color: #373F46;
+      }
+    </style>
+  
+  <div class="section--middle optin__panel optin__panel--boxed" kjb-settings-id="sections_1560057552443_settings_form">
+    <input type="hidden" name="thank_you_url" value="#next-pipeline-step">
+    <div class="row optin optin--stacked">
+      <div class="col-md-12">
+        
+          <h3 class="optin__heading" kjb-settings-id="sections_1560057552443_settings_heading">Watch the first episode FREE</h3>
+        
+        
+      </div>
+      
+        <div class="col-md-12" style="text-align: left">
+          <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" data-parsley-remote-message="false" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+        </div>
+      
+      <div class="col-md-12">
+        <button class="btn btn--sections_1560057552443_settings_btn_text btn--block btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_1560057552443_settings_btn_text">Watch Now</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1569127547683" data-section-id="1569127547683"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1569127547683 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1569127547683 a, .section--link_list.section--light.section--1569127547683 a, .section--blog_posts.section--dark.section--1569127547683 a, .section--blog_posts.section--light.section--1569127547683 a, .section--feature.section--dark.section--1569127547683 a, .section--feature.section--light.section--1569127547683 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<!-- Conditional Styles For Accent Bar -->
+
+
+<div id="" class="section section--heading section--top section--xs-small section--light section--1569127547683" kjb-settings-id="sections_1569127547683_settings_background_color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+          <h2 class="section--heading__title section--heading__title--sm" kjb-settings-id="sections_1569127547683_settings_heading">Are you going to be our next success story?</h2>
+        
+        
+          <p class="section--heading__subtitle section--heading__subtitle--sm" kjb-settings-id="sections_1569127547683_settings_subheading">"I wouldn't have been able to do it without the crash courses on TIP. Really pays for itself." - Steven (Accepted an offer at Apple)</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1569127060660" data-section-id="1569127060660"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1569127060660 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #fff;
+  }
+  
+  .section--link_list.section--dark.section--1569127060660 a, .section--link_list.section--light.section--1569127060660 a, .section--blog_posts.section--dark.section--1569127060660 a, .section--blog_posts.section--light.section--1569127060660 a, .section--feature.section--dark.section--1569127060660 a, .section--feature.section--light.section--1569127060660 a {
+    
+  }
+</style>
+
+
+<div id="" class="section section--gallery section--top section-- section--light section--1569127060660">
+  <div class="row">
+    
+      
+        <div class="col-md-3">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1569127060660_0 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1569127060660_0 .gallery-image__text-container, .gallery-image--1569127060660_0 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1569127060660_0">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/cKLKNFyT1CCXNLVU8TUQ_t0.jpg" class="img-fluid" kjb-settings-id="sections_1569127060660_blocks_1569127060660_0_settings_image" />
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+      
+        <div class="col-md-3">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1569127060660_1 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1569127060660_1 .gallery-image__text-container, .gallery-image--1569127060660_1 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1569127060660_1">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/rLZMWWy1Sjad1bHnTtxK_t1.jpg" class="img-fluid" kjb-settings-id="sections_1569127060660_blocks_1569127060660_1_settings_image" />
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+      
+        <div class="col-md-3">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1569127060660_2 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1569127060660_2 .gallery-image__text-container, .gallery-image--1569127060660_2 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1569127060660_2">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/OSBVBJo1Q4WNtVTaHl5s_t2.jpg" class="img-fluid" kjb-settings-id="sections_1569127060660_blocks_1569127060660_2_settings_image" />
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+      
+        <div class="col-md-3">
+          
+
+
+
+
+
+<style>
+  .gallery-image--1569128915469 .gallery-image__overlay--bg {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .gallery-image--1569128915469 .gallery-image__text-container, .gallery-image--1569128915469 .gallery-image__text-container h3 {
+    color: #ffffff;
+  }
+</style>
+
+<div class="gallery-image gallery-image--1569128915469">
+  
+    <a class="gallery-image__link">
+  
+  <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/settings_images/c3g5n0NKRMONs4X4zwlf_te4.jpg" class="img-fluid" kjb-settings-id="sections_1569127060660_blocks_1569128915469_settings_image" />
+  
+  </a>
+</div>
+
+        </div>
+      
+    
+  </div>
+</div>
+
+</div><div id="section-1569129113993" data-section-id="1569129113993"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1569129113993 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #ecf0f1;
+  }
+  
+  .section--link_list.section--dark.section--1569129113993 a, .section--link_list.section--light.section--1569129113993 a, .section--blog_posts.section--dark.section--1569129113993 a, .section--blog_posts.section--light.section--1569129113993 a, .section--feature.section--dark.section--1569129113993 a, .section--feature.section--light.section--1569129113993 a {
+    
+  }
+</style>
+
+
+
+
+
+
+
+
+<div class="">
+  <div id="" class="section section--opt_in section--opt_in_bar section--middle section--small section--light section--1569129113993 " kjb-settings-id="sections_1569129113993_settings_background_color">
+    <div class="container">
+      <div class="row text-xs-center">
+        
+          
+          <div class="col-md-12 ">
+            <div kjb-settings-id="sections_1569129113993_settings_text" style="text-align: left">
+  <h3>Join us at Tech Interview Pro.</h3>
+<p>The first episode is FREE.</p>
+</div>
+
+            
+              
+
+<form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.techseries.dev/forms/209211/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="k5tlh37M8wjwIE8h7OLATdrx2NGayuuNNUIk33P7LSXXITEy3qO3A0ieEuNOwoFV+Sxvz1fEm4aA0DcVjbFFQQ==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="41a4112779c7bdcb9d7102ce2847f87c" /><input type="hidden" name="form_submission[landing_page_id]" value="599673" autofill="off" />
+  
+  
+  
+  
+  
+  
+
+  <style>
+    /*============================================================================
+      #Individual CTA Style
+    ==============================================================================*/
+    .btn--sections_1569129113993_settings_btn_text.btn--solid {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #fff;
+    }
+    .btn--sections_1569129113993_settings_btn_text.btn--outline {
+      border-color: #cc0000;
+      color: #cc0000;
+    }
+  </style>
+  <div class="section--top" kjb-settings-id="sections_1569129113993_settings_form" style="text-align: left">
+    <input type="hidden" name="thank_you_url" value="">
+    
+      <div class="row optin optin--inline">
+        <div class="col-md-8">
+          <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" data-parsley-remote-message="false" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn--sections_1569129113993_settings_btn_text btn--block btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_1569129113993_settings_btn_text">Watch Now</button>
+        </div>
+      </div>
+    
+  </div>
+</form>
+
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1560994415175" data-section-id="1560994415175"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1560994415175 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1560994415175 a, .section--link_list.section--light.section--1560994415175 a, .section--blog_posts.section--dark.section--1560994415175 a, .section--blog_posts.section--light.section--1560994415175 a, .section--feature.section--dark.section--1560994415175 a, .section--feature.section--light.section--1560994415175 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1560994415175  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1560994415175_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1560994415175 " kjb-settings-id="sections_1560994415175_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1560994426584 {
+    text-align: center;
+  }
+  
+    .block-break--1560994426584 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1560994426584"></div>
+
+<div class="col-md-12 block--1560994426584">
+  <div kjb-settings-id="sections_1560994415175_blocks_1560994426584_settings_code" class="fluid-video">
+    <style>.header .header-ham {display:none}</style>
+
+<!-- YouTube Ads Remarketing -->
+<!-- Global site tag (gtag.js) - Google Ads: 1053390069 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1053390069"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1053390069');
+</script>
+
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1560994426584"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div></div>
+          <div id="section-footer" data-section-id="footer">
+
+
+
+<style>
+  .footer {
+    background: #272d34;
+  }
+  
+</style>
+
+
+  
+  
+  <footer class="footer footer--dark footer--left" kjb-settings-id="sections_footer_settings_background_color">
+    <div class="container">
+      <div class="footer__text-container">
+        
+        
+          <span kjb-settings-id="sections_footer_settings_copyright" class="footer__copyright">&copy; 2019 TechSeries</span>
+        
+        
+        
+          <div kjb-settings-id="sections_footer_settings_menu" class="footer__menu">
+            
+              <a class="footer__menu-item" href="https://www.techseries.dev/pages/contact">Contact</a>
+            
+              <a class="footer__menu-item" href="https://www.techseries.dev/pages/terms">Terms</a>
+            
+              <a class="footer__menu-item" href="https://www.techseries.dev/pages/privacy-policy">Privacy</a>
+            
+          </div>
+        
+      </div>
+      <!-- Section Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .footer .social-icons__icon,
+  .footer .social-icons__icon:hover {
+    color: #ffffff;
+  }
+  .footer .social-icons--round .social-icons__icon ,
+  .footer .social-icons--square .social-icons__icon {
+    background-color: #cc0000;
+  }
+</style>
+
+
+
+    </div>
+  </footer>
+
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div id="section-pop_exit" data-section-id="pop_exit">
+
+  
+
+
+
+  
+    <div id="exit-pop" class="pop pop--light" style="display: none;" data-timed-reveal="0" data-cookie-expire="10">
+      <div class="pop__content">
+        <div class="pop__inner">
+          <div class="pop__body" style="background: #fff">
+            <a class="pop__close">
+              Close
+            </a>
+            
+            <div class="pop__body--inner">
+              <div kjb-settings-id="sections_pop_exit_settings_text">
+                <h2>Watch the first episode FREE</h2>
+<p>It's 100% free, no catch.</p>
+              </div>
+              
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*============================================================================
+    #Individual CTA Style
+  ==============================================================================*/
+  .btn--solid.btn--1560059603174 {
+    background: #cc0000 !important;
+    border-color: #cc0000 !important;
+    color: #fff !important;
+  }
+  .btn--solid.btn--1560059603174:hover {
+    color: #fff !important;
+  }
+  .btn--outline.btn--1560059603174 {
+    border-color: #cc0000 !important;
+    color: #cc0000 !important;
+  }
+  .btn--outline.btn--1560059603174:hover {
+    color: #cc0000 !important;
+  }
+</style>
+<a href="#two-step" class="btn btn-cta btn--auto btn--solid btn--med btn--1560059603174" data-offset-number="" data-offset-period="seconds" data-event="" id="" kjb-settings-id="sections_pop_exit_blocks_1560059603174_settings_btn_action" target="">Watch Now</a>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+</div>
+    <div id="section-pop_two_step" data-section-id="pop_two_step">
+
+
+
+
+
+
+  
+
+
+<style>
+  #two-step {
+    display: none;
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    
+      /*============================================================================
+        #Text Color Override
+      ==============================================================================*/
+      color: ;
+    
+  }
+</style>
+
+<div id="two-step" class="pop pop--light">
+  <div class="pop__content">
+    <div class="pop__inner">
+      <div class="pop__body" style="background: #fff;">
+        <a class="pop__close">
+          Close
+        </a>
+        
+        <div class="pop__body--inner">
+          
+            <div class="block--1560059789297">
+              
+                  <div kjb-settings-id="sections_pop_two_step_blocks_1560059789297_settings_text">
+  <h3>Where do we send the video?</h3>
+<p>Get&nbsp;the first episode free.</p>
+</div>
+
+              
+            </div>
+          
+          
+  <form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.techseries.dev/forms/209211/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iem45qhxZP3WUvDuS82h322LUu6y0L5bOia/qJ99DyzNU+xTCB4g9m7srSzp7eDHTlbl8H/ezlCPtKxiYTdnSA==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="e0b49fb7564027bcfbaa5afb96f52fc1" /><input type="hidden" name="form_submission[landing_page_id]" value="599673" autofill="off" />
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <style>
+      /*============================================================================
+        #Individual CTA Style
+      ==============================================================================*/
+      .btn--sections_pop_two_step_settings_btn_text.btn--solid {
+        background: #cc0000;
+        border-color: #cc0000;
+        color: #fff;
+      }
+      .btn--sections_pop_two_step_settings_btn_text.btn--outline {
+        border-color: #cc0000;
+        color: #cc0000;
+      }
+    </style>
+    <div class="pop__form" kjb-settings-id="sections_pop_two_step_settings_form">
+      <input type="hidden" name="thank_you_url" value="#next-pipeline-step">
+      <div class="row optin optin--stacked">
+        
+          <div class="col-md-12">
+            <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" data-parsley-remote-message="false" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+          </div>
+        
+        <div class="col-md-12">
+          <button class="btn btn--sections_pop_two_step_settings_btn_text btn--block btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_pop_two_step_settings_btn_text">Watch now</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <!-- Javascripts ================================================== -->
+    <script src="https://ap-kajabi-storefronts-production.global.ssl.fastly.net/assets/core-c9db64c34f63b4661b901b9d66faf46c4c616027e9a2e41796955c8b13894c32.js"></script>
+    <script charset='ISO-8859-1' src='https://fast.wistia.com/assets/external/E-v1.js'></script>
+    <script charset='ISO-8859-1' src='https://fast.wistia.com/labs/crop-fill/plugin.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/1041252/assets/scripts.js?1571072521248925"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.8/js/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  </body>
+</html>
